@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmdb_ci_ip_address" label="IP Address" max_length="40" name="x_378539_ipm_ip_address" type="collection">
+        <element label="First Octet" max_length="40" name="first_octet" type="integer"/>
+        <element label="Fourth Octet" max_length="40" name="fourth_octet" type="integer"/>
+        <element label="IP Value" max_length="40" name="ip_value" type="integer"/>
+        <element label="Second Octet" max_length="40" name="second_octet" type="integer"/>
+        <element label="Third Octet" max_length="40" name="third_octet" type="integer"/>
+    </element>
+</database>

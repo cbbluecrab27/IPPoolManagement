@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmdb_ci" label="IP Pool" max_length="40" name="x_378539_ipm_ip_pool" type="collection">
+        <element label="First Octet - End" max_length="40" name="first_octet_end" type="integer"/>
+        <element label="First Octet - Start" max_length="40" name="first_octet_start" type="integer"/>
+        <element label="Fourth Octet - End" max_length="40" name="fourth_octet_end" type="integer"/>
+        <element label="Fourth Octet - Start" max_length="40" name="fourth_octet_start" type="integer"/>
+        <element label="IP Value" max_length="40" name="ip_value" type="integer"/>
+        <element label="Second Octet - End" max_length="40" name="second_octet_end" type="integer"/>
+        <element label="Second Octet - Start" max_length="40" name="second_octet_start" type="integer"/>
+        <element label="Third Octet - End" max_length="40" name="third_octet_end" type="integer"/>
+        <element label="Third Octet - Start" max_length="40" name="third_octet_start" type="integer"/>
+    </element>
+</database>
