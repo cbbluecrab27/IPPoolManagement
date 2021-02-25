@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Pool Change Request Impacted IP Pools M2M" max_length="40" name="x_378539_ipm_pool_change_request_impacted_ip_pools_m2m" sizeclass="1" type="collection">
+        <element label="Assessed Date" max_length="40" name="assessed_date" type="calendar_date_time"/>
+        <element attributes="encode_utf8=false" label="IP Pool" max_length="32" name="ip_pool" reference="x_378539_ipm_ip_pool" type="reference"/>
+        <element attributes="encode_utf8=false" label="Pool Change Request" max_length="32" name="pool_change_request" reference="x_378539_ipm_pool_change_request" type="reference"/>
+        <element label="Processed Date" max_length="40" name="processed_date" type="calendar_date_time"/>
+        <index name="index">
+            <element name="ip_pool"/>
+        </index>
+        <index name="index2">
+            <element name="pool_change_request"/>
+        </index>
+    </element>
+</database>

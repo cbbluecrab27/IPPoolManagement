@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Class" max_length="40" name="x_378539_ipm_class" type="collection">
+    <element label="Class" max_length="40" name="x_378539_ipm_class" sizeclass="1" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Inverse mask prefix" max_length="40" name="inverse_mask_prefix" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Mask prefix" max_length="40" name="mask_prefix" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Value" max_length="40" name="value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Value" max_length="40" name="value" type="string"/>
     </element>
 </database>

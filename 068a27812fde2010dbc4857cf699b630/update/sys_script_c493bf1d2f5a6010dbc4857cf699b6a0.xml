@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_378539_ipm_ip_address</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Construct IP Address</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+    if (current.first_octet != previous.first_octet || current.second_octet != previous.second_octet || current.third_octet != previous.third_octet || current.fourth_octet != previous.fourth_octet) {
+        var result = current.first_octet;
+        result = result + current.second_octet;
+        result = result + current.third_octet;
+        result = result + current.fourth_octet;
+        current.ip_address = result;
+
+        result = current.first_octet * Math.pow(256, 3);
+        result = result + current.second_octet * Math.pow(256, 2);
+        result = result + current.third_octet * Math.pow(256, 1);
+        result = result + current.fourth_octet * Math.pow(256, 0);
+        current.ip_value = result;
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-12 14:42:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c493bf1d2f5a6010dbc4857cf699b6a0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Construct IP Address</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IPM" source="x_378539_ipm">068a27812fde2010dbc4857cf699b630</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPM">068a27812fde2010dbc4857cf699b630</sys_scope>
+        <sys_update_name>sys_script_c493bf1d2f5a6010dbc4857cf699b6a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-02-24 14:04:40</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=c493bf1d2f5a6010dbc4857cf699b6a0"/>
+</record_update>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="cmdb_ci_ip_address" label="IP Address" max_length="40" name="x_378539_ipm_ip_address" type="collection">
+    <element extends="cmdb_ci_ip_address" label="IP Address" max_length="40" name="x_378539_ipm_ip_address" sizeclass="0" type="collection">
+        <element label="Assigned IP Pool" max_length="32" name="assigned_ip_pool" reference="x_378539_ipm_ip_pool" type="reference"/>
+        <element label="Family" max_length="32" name="family" reference="x_378539_ipm_family" type="reference"/>
         <element label="First Octet" max_length="40" name="first_octet" type="integer"/>
         <element label="Fourth Octet" max_length="40" name="fourth_octet" type="integer"/>
-        <element label="IP Value" max_length="40" name="ip_value" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;    var result = current.first_octet * Math.pow(256, 3);&#13;&#10;        result = result + current.second_octet * Math.pow(256, 2);&#13;&#10;        result = result + current.third_octet * Math.pow(256, 1);&#13;&#10;        result = result + current.fourth_octet * Math.pow(256, 0) ;&#13;&#10;    return result; // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="IP Value" max_length="40" name="ip_value" type="integer" virtual="true"/>
         <element label="Second Octet" max_length="40" name="second_octet" type="integer"/>
         <element label="Third Octet" max_length="40" name="third_octet" type="integer"/>
     </element>

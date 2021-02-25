@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="899e10452f6e2010dbc4857cf699b605" sys_domain="global" table="x_378539_ipm_ip_address" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-23 14:45:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d9e10452f6e2010dbc4857cf699b608</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_378539_ipm_ip_address" name="x_378539_ipm_ip_address" sys_domain="global" view="Default view">899e10452f6e2010dbc4857cf699b605</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_378539_ipm_ip_address" sys_domain="global" view="Default view">f83d50052f6e2010dbc4857cf699b67f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-23 14:45:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-23 14:45:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>199e10452f6e2010dbc4857cf699b609</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_378539_ipm_ip_address" name="x_378539_ipm_ip_address" sys_domain="global" view="Default view">899e10452f6e2010dbc4857cf699b605</sys_ui_form>
+            <sys_ui_section caption="Components" display_value="Components" name="x_378539_ipm_ip_address" sys_domain="global" view="Default view">099edc052f6e2010dbc4857cf699b6ad</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-23 14:45:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_378539_ipm_ip_address</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-23 14:45:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>899e10452f6e2010dbc4857cf699b605</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_378539_ipm_ip_address</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="IPM" source="x_378539_ipm">068a27812fde2010dbc4857cf699b630</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="IPM">068a27812fde2010dbc4857cf699b630</sys_scope>
+            <sys_update_name>sys_ui_form_sections_899e10452f6e2010dbc4857cf699b605</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-23 14:45:15</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

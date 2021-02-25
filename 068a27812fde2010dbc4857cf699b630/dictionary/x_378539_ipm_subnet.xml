@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Subnet" max_length="40" name="x_378539_ipm_subnet" type="collection">
-        <element attributes="edge_encryption_enabled=true" label="CIDR" max_length="40" name="cidr" type="string"/>
-        <element label="Number of IPs per pool" max_length="40" name="number_of_ips_per_pool" type="integer"/>
+    <element label="Subnet" max_length="40" name="x_378539_ipm_subnet" sizeclass="1" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="CIDR" max_length="40" name="cidr" type="string"/>
+        <element label="Class" max_length="32" name="class" reference="x_378539_ipm_class" type="reference"/>
+        <element label="Inverse Mask - Suffix" max_length="8" name="inverse_mask_suffix" type="string"/>
+        <element label="Mask - Suffix" max_length="8" name="mask_suffix" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;    // Add your code here&#13;&#10;    var result = current.number_of_ips_per_subnets * current.number_of_subnets_per_pool;&#13;&#10;    return result; // return the calculated value&#13;&#10;&#9;&#13;&#10;&#9;&#13;&#10;&#13;&#10;})(current);" label="Number of IPs per pool" max_length="40" name="number_of_ips_per_pool" type="integer" virtual="true"/>
         <element label="Number of IPs per subnets" max_length="40" name="number_of_ips_per_subnets" type="integer"/>
         <element label="Number of subnets per pool" max_length="40" name="number_of_subnets_per_pool" type="integer"/>
+        <index name="index">
+            <element name="class"/>
+        </index>
     </element>
 </database>

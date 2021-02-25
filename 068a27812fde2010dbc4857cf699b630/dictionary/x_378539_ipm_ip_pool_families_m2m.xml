@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="IP Pool Families M2M" max_length="40" name="x_378539_ipm_ip_pool_families_m2m" sizeclass="1" type="collection">
+        <element attributes="encode_utf8=false" label="Family" max_length="32" name="family" reference="x_378539_ipm_family" type="reference"/>
+        <element attributes="encode_utf8=false" label="IP Pool" max_length="32" name="ip_pool" reference="x_378539_ipm_ip_pool" type="reference"/>
+        <index name="index">
+            <element name="ip_pool"/>
+        </index>
+        <index name="index2">
+            <element name="family"/>
+        </index>
+    </element>
+</database>
